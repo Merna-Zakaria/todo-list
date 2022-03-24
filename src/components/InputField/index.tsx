@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ChangeEvent } from "react";
 import TextField from '@mui/material/TextField';
 
 type inputProps = {
@@ -8,7 +8,7 @@ type inputProps = {
   label: string,
   value: string,
   error: boolean,
-  changeHandler: () => {},
+  changeHandler: (event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => any,
   helperText: string,
   isMultiline: boolean,
   isRequired: boolean,
